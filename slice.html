@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> slice array </title>
+  </head>
+  <body>
+<script>
+
+
+  const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+
+  console.log(animals.slice(2));
+// expected output: Array ["camel", "duck", "elephant"]
+
+  console.log(animals.slice(2, 4));
+// expected output: Array ["camel", "duck"]
+
+  console.log(animals.slice(1, 5));
+// expected output: Array ["bison", "camel", "duck", "elephant"]
+
+
+
+
+/*음수 인덱스로 slice() 사용하기
+아래 예시는 slice()에 음수 인덱스를 사용합니다.*/
+
+//str.slice(beginIndex[, endIndex])//
+
+var str = 'The morning is upon us.';
+str.slice(-3);     // returns 'us.'
+str.slice(-3, -1); // returns 'us'
+str.slice(0, -1);  // returns 'The morning is upon us'
+//이 예시는 시작 인덱스를 찾기 위해 문자열의 끝에서부터 역방향으로 11개를 세고 끝 인덱스를 찾기 위해 문자열의 시작에서부터 정방향으로 16개를 셉니다.//
+
+console.log(str.slice(-11, 16)) // => "is u";
+console.log(str.slice(-5, -1))  // => "n us";
+console.log(str.slice(2, -1))
+
+var i = ['a', 'b', 'c', 'd', 'e'];
+alert(i.slice(-1, 4));
+
+
+var str = 'My name is Jeong ho KIM.';
+
+console.log(str.slice(-1,-5));
+
+  </script>
+
+  </body>
+</html>

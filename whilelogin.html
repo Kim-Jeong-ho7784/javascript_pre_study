@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      //로그인 성공 여부를 보관하는 변수
+      var login = false;
+
+      // 로그인에 성공할 때까지 반복
+      while (!login){
+        var id = window.prompt("아이디를 입력하세요")
+        var password = window.prompt("비밀번호를 입력하세요")
+
+        if (id == 'gangnam' && password == '1234'){
+          console.log('로그인되었습니다.' + id + '님.');
+          login = true;
+        } else {
+          console.log('다시 입력해주세요.');
+        }
+      }
+
+
+      var login = false;
+
+      while (!login){
+        var id = window.prompt("아이디를 입력하세요")
+        var password = window.prompt("비밀번호를 입력하세요")
+
+      if (id == 'gangnam' && password == '1234'){
+        console.log('로그인되었습니다' + id + '님');
+        login = true;
+
+      } else{
+        console.log('다시 입력해주세요.')
+      }
+      }
+      </script>
+
+  </body>
+</html>
